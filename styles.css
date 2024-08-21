@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.iphone {
+    width: 320px;
+    height: 615px;
+    background-color:black;
+    border-radius: 35px;
+    box-shadow: 0 10px 30px rgb(245, 3, 3);
+    overflow: hidden;
+    position: relative;
+}
+
+.iphone-notch {
+    width: 150px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 10px 10px;
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.display {
+    background-color:dimgrey;
+    color: #fff;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: right;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.button {
+    background-color: dimgrey;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 160%;
+    border: none;
+    
+    transition: all 0.2s ease;
+}
+
+.button.operator {
+    background-color: #f1a33c;
+}
+
+.button.equals {
+    background-color: #f96c3d;
+    grid-column: span 0.87;
+}
+
+.button.action {
+    background-color: #d4d4d2;
+    color: #000;
+}
